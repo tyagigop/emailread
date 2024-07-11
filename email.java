@@ -84,15 +84,6 @@ public class EmailReader {
                     System.out.println("Subject: " + message.getSubject());
                     String body = getTextFromMessage(message);
                     System.out.println("Body: " + body);
-                    String clientName = extractField(body, "Client Name");
-                    String masterAgreementNumber = extractField(body, "Master Agreement Number");
-                    String emailAddress = extractField(body, "Email Address");
-                    String contactName = extractField(body, "Contact Name");
-
-                    System.out.println("Client Name: " + clientName);
-                    System.out.println("Master Agreement Number: " + masterAgreementNumber);
-                    System.out.println("Email Address: " + emailAddress);
-                    System.out.println("Contact Name: " + contactName);
                 }
             }
             inbox.close(false);
